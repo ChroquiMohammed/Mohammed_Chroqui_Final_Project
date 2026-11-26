@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/output.css">
     <title>Signaler</title>
 </head>
-<body>
+<body class="bg-[#fdf8f0]">
 
 
     <header class="bg-black z-50 opacity-[0.9]  py-[1rem] px-[4rem]  fixed w-full max-md:px-[0rem] max-md:gap-[2rem] max-md:flex max-md:flex-col max-md:pb-0   ">
@@ -154,28 +154,28 @@
 
 
          <!-- Section 4 -->
-          <section>
+          <section class="flex max-md:flex-col gap-[3rem] justify-between">
 
             <!-- left forme -->
-            <div class="lined-paper w-[55%] flex flex-col gap-[2rem] p-[3rem] shadow-2xl">
+            <div class="lined-paper w-[60%] max-md:w-full flex flex-col gap-[2rem] p-[3rem] max-md:p-[1rem] shadow-2xl">
                 <div class="flex border-b border-b-[2px]  w-full justify-between py-[1rem]">
                     <p>Lettre confidentielle</p>  
                     <p>صوتي</p>
                 </div>
-                <p class="font-stat text-[3rem] ">Chére personne qui m'écoute,</p>
+                <p class="font-stat text-[3rem] max-md:text-[2rem] ">Chére personne qui m'écoute,</p>
                 <form class="flex flex-col font-stat gap-[2rem]" >
 
                     <!-- name -->
-                    <div class="text-[1.2rem] flex">
+                    <div class="text-[1.2rem] max-md:gap-[1rem] flex max-md:flex-col">
                         <label for="name">Je m'appelle</label>
                         <input id="name" type="text" placeholder="ton prénom" class="border-b border-b-[2px] px-[0.5rem] outline-none">
-                        <p> (ou : je reste anonyme)</p>
+                        <p class="text-gray-500"> (ou : je reste anonyme)</p>
                     </div>
 
                     <!-- Select -->
-                    <div class="text-[1.2rem] flex">
+                    <div class="text-[1.2rem] flex max-md:flex-col max-md:gap-[1rem]">
                         <label for="name">Je veux signaler :</label>
-                        <select  id="" class="outline-none">
+                        <select  id="" class="outline-none border-b border-b-[2px]">
                             <option value="#" disabled selected>choisir</option>
                             <option value="marriage">marriage forcé</option>
                             <option value="marriage_mineure">mariage d'une mineure</option>
@@ -185,22 +185,22 @@
 
 
                     <!-- textarea -->
-                    <div class="text-[1.2rem] flex flex-col">
+                    <div class="text-[1.2rem] flex flex-col max-md:gap-[1rem]">
                         <label for="message"> Ce qui s'est passé :</label>
                         <textarea  id="message" rows="5" placeholder="Écris ici, avec tes propres mots.." class="p-[1rem] outline-alpha"></textarea>
                     </div>
 
                     <!-- last contact -->
-                    <div class="flex flex-col gap-[1rem] ">
+                    <div class="flex flex-col gap-[1rem]   ">
                         <p class="text-[1.3rem]">Personne de confiance<span class="text-[1rem] text-gray-500"> (si tu en as une)</span> :</p>
-                        <div class="flex gap-[1rem]">
+                        <div class="flex gap-[1rem] max-md:flex-col">
                         <div>
                             <label for="nom">nom</label>
-                            <input type="text" id="nom" class="border-b border-b-[2px] outline-none">
+                            <input type="text" id="nom" placeholder="son nom" class="border-b border-b-[2px] px-[0.5rem]  outline-none">
                         </div>
                         <div>
-                            <label for="nom">téléphone</label>
-                            <input type="text" id="nom" class="border-b border-b-[2px] outline-none">
+                            <label for="tele">téléphone</label>
+                            <input type="text" id="tele"  placeholder="son téléphone"  class="border-b border-b-[2px] outline-none px-[0.5rem]">
                         </div>
 
                         </div>
@@ -220,7 +220,42 @@
 
 
             <!-- Right Q&A -->
-            <div class="w-[40%]"></div>
+            <div class="w-[35%] max-md:w-full flex flex-col gap-[1.3rem]">
+                <p class="uppercase text-[0.8rem] text-alpha tracking-[0.1rem] font-semibold">sans écrire</p>
+                <div class="flex flex-col gap-[0.7rem]">
+                    <p class="text-[3rem] font-stat ">Réponds simplement</p>
+                    <p class="text-gray-500">Un parcours guidé en arab,en cinq question courtes.</p>
+                </div>
+                <div class="flex flex-col py-[4rem] bg-bg px-[2rem]" dir="rtl" >
+                    <p></p>
+                    <div class="flex  flex-col gap-[1rem]">
+                    <div>
+                        <p class="text-alpha text-[0.8rem] font-semibold ">مساحة آمنة وسرية</p>
+                        <p class="text-white text-[2rem] font-semibold">أجيبي عن 5 أسئلة بسيطة. لا حاجة للكتابة.</p>
+                    </div>
+                    <button class="flex bg-alpha justify-between lift py-[0.8rem] w-full px-[1rem]">
+                      
+                        <p class="text-white font-semibold">ابدئي</p>
+                        <p class="text-white font-semibold">←</p>
+
+                    </button>
+                    <button class="py-[0.8rem] lift flex justify-center items-center w-full border border-gray-500">
+                        <p class="text-white font-semibold">أفضل أن أتحدث</p>
+                    </button>
+
+                    </div>
+                </div>
+                <div dir="rtl" class="flex gap-[1rem] border px-[1rem] py-[0.7rem] hover:border-alpha items-center lift">
+                    <svg class="fill-alpha" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    </svg>
+                    <p class="text-bg text-[0.9rem] ">بدل الكتابة، سجّلي رسالة صوتية</p>
+                </div>
+
+                <p class="text-gray-500 text-[0.5rem]">Ce site est un projet étudiant : ce formulaire est une demonstration.</p>
+
+            </div>
           </section>
     </main>
 
