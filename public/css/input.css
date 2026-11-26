@@ -39,3 +39,11 @@
 .underline-hover:hover::after {
   transform: scaleX(1);
 }
+
+.underline-active {
+  color: #FF6B00;
+}
+.underline-active::after {
+  transform: scaleX(1);
+}
+
