@@ -14,7 +14,7 @@
 
 
 .lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
 .lift:hover {
   transform: translateY(-3px) scale(1.01);
@@ -46,4 +46,5 @@
 .underline-active::after {
   transform: scaleX(1);
 }
+
 
