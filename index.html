@@ -8,7 +8,7 @@
     <title>Accueil</title>
 </head>
 <body>
-    <header class="bg-black opacity-[0.8]  py-[1.5rem] px-[4rem]  fixed w-full max-md:px-[0rem] max-md:gap-[2rem] max-md:flex max-md:flex-col max-md:pb-0   ">
+    <header class="bg-black z-50 opacity-[0.8]  py-[1.5rem] px-[4rem]  fixed w-full max-md:px-[0rem] max-md:gap-[2rem] max-md:flex max-md:flex-col max-md:pb-0   ">
         <div class="flex items-center justify-between px-[1rem]">
         <img src="./public/images/logo_sawti.webp" alt="" class="w-[7%] max-md:w-[23%]">
         <nav class="text-white flex items-center gap-[3rem] text-[0.8rem] font-medium  max-md:hidden">
@@ -19,7 +19,7 @@
         </nav>
         <!-- button -->
         <div>
-            <button class="lift "><a href="" class="uppercase  transition-[0.5s] hover:bg-alpha bg-white py-[0.7rem] px-[1.1rem] text-[0.7rem] font-bold tracking-[0.1rem]">Sortie Rapide</a></button>
+            <button class="lift "><a href="" class="uppercase  transition-[0.5s] hover:bg-alpha bg-white py-[0.7rem] px-[1.1rem] text-[0.7rem] font-bold tracking-[0.1rem] flex gap-[0.8rem]"><p>Sortie Rapide</p><p>↗</p></a></button>
         </div>
 
         </div>
@@ -31,5 +31,40 @@
         </nav>
 
     </header>
+
+
+    <main>
+        <!-- hero section -->
+        <section class="bg-[url('/public/images/hero_section_bg.webp')]  w-full h-[100vh] bg-cover relative">
+            <div class="absolute bg-black w-full h-full opacity-[0.6]"></div>
+            <!-- contenue for hero section -->
+            <div class="absolute flex flex-col items-center justify-center h-full w-full gap-[2rem] pt-[5rem] max-md:px-[2rem] ">
+                <h1 class="font-display uppercase text-white text-[8rem] w-[50%] text-center leading-[6.5rem] max-md:text-[5rem] max-md:w-[95%] max-md:leading-[4rem]">on a dit oui a sa place.</h1>
+                <div class="text-center flex flex-col gap-[0.7rem]">
+                <p class="text-white text-[1.2rem] max-md:text-[1rem]">Mariage forcé des mineures — 16 jours d'activisme, 25 novembre → 10 décembre.</p>
+                <p class="text-gray-400 text-[1rem] max-md:text-[0.8rem]  font-medium"><span class="text-white text-[0.9rem] font-semibold">12 millions</span> des filles mariees avant 18 ans chaque année<span class="text-alpha"> . </span>1 fille toutes les <span class="text-alpha"> 3 </span> secondes.</p>
+                </div>
+                <div class="flex  flex-col gap-[1rem] justfy-center text-center">
+                        <button class="lift "><a href="" class="flex gap-[2rem]  items-center transition-[0.5s] hover:bg-[#ff7e1f] bg-alpha py-[1rem] px-[1.1rem] text-[0.9rem] font-bold "><p>Signaler maintenant</p><p class="text-[1.2rem]">→</p></a></button>
+                        <a href="" class="  underline  underline-offset-8 text-white text-[0.8rem]  decoration-white hover:decoration-alpha hover:text-alpha transition-[1s]">ou réponds à 5 questions simples</a>
+                </div>
+                <div class="flex items-center gap-[0.5rem]">
+                    <span class="relative flex h-2.5 w-2.5">
+                        <span class="absolute inline-flex h-full w-full rounded-full bg-[#FF6B00] opacity-75 animate-ping"></span>
+                        <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#FF6B00]"></span>
+                    </span>
+                    <p class="text-gray-400 text-[0.7rem]">Depuis que tu es sur cette page, <span class="text-white font-semibold text-[0.9rem]">5</span> files on été mariée de force</p>
+                </div>
+                
+
+            </div>i
+
+        </section>
+
+        <!-- secon section -->
+         <section></section>
+    </main>
+
+
 </body>
 </html>
