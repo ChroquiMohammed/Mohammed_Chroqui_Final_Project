@@ -47,4 +47,8 @@
   transform: scaleX(1);
 }
 
+.lined-paper {
+  background-color: #fffefa;
+  background-image: repeating-linear-gradient(transparent, transparent 35px, #ece8e2 35px, #ece8e2 36px);
+}
 

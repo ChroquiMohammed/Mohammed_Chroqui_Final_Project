@@ -151,6 +151,77 @@
                 <p class="text-[0.6rem] underline  font-semibold text-[0.7rem] underline-offset-8 decoration-black ">↓</p>
             </button>
          </section>
+
+
+         <!-- Section 4 -->
+          <section>
+
+            <!-- left forme -->
+            <div class="lined-paper w-[55%] flex flex-col gap-[2rem] p-[3rem] shadow-2xl">
+                <div class="flex border-b border-b-[2px]  w-full justify-between py-[1rem]">
+                    <p>Lettre confidentielle</p>  
+                    <p>صوتي</p>
+                </div>
+                <p class="font-stat text-[3rem] ">Chére personne qui m'écoute,</p>
+                <form class="flex flex-col font-stat gap-[2rem]" >
+
+                    <!-- name -->
+                    <div class="text-[1.2rem] flex">
+                        <label for="name">Je m'appelle</label>
+                        <input id="name" type="text" placeholder="ton prénom" class="border-b border-b-[2px] px-[0.5rem] outline-none">
+                        <p> (ou : je reste anonyme)</p>
+                    </div>
+
+                    <!-- Select -->
+                    <div class="text-[1.2rem] flex">
+                        <label for="name">Je veux signaler :</label>
+                        <select  id="" class="outline-none">
+                            <option value="#" disabled selected>choisir</option>
+                            <option value="marriage">marriage forcé</option>
+                            <option value="marriage_mineure">mariage d'une mineure</option>
+                            <option value="autre">autre violence</option>
+                        </select>
+                    </div>
+
+
+                    <!-- textarea -->
+                    <div class="text-[1.2rem] flex flex-col">
+                        <label for="message"> Ce qui s'est passé :</label>
+                        <textarea  id="message" rows="5" placeholder="Écris ici, avec tes propres mots.." class="p-[1rem] outline-alpha"></textarea>
+                    </div>
+
+                    <!-- last contact -->
+                    <div class="flex flex-col gap-[1rem] ">
+                        <p class="text-[1.3rem]">Personne de confiance<span class="text-[1rem] text-gray-500"> (si tu en as une)</span> :</p>
+                        <div class="flex gap-[1rem]">
+                        <div>
+                            <label for="nom">nom</label>
+                            <input type="text" id="nom" class="border-b border-b-[2px] outline-none">
+                        </div>
+                        <div>
+                            <label for="nom">téléphone</label>
+                            <input type="text" id="nom" class="border-b border-b-[2px] outline-none">
+                        </div>
+
+                        </div>
+                    </div>
+
+                    <!-- sbumit -->
+                     <button class="w-full py-[0.8rem] group bg-bg hover:bg-alpha transition-[1s] flex justify-between items-center px-[1rem]">
+                        <p class="text-[0.8rem] group-hover:text-bg font-semibold text-white">Confier ma lettre</p>
+                        <p class="text-white group-hover:text-bg">→</p>
+                     </button>
+
+                </form>
+            </div>
+
+
+
+
+
+            <!-- Right Q&A -->
+            <div class="w-[40%]"></div>
+          </section>
     </main>
 
 </body>
