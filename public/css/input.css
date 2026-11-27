@@ -5,7 +5,6 @@
 
 @theme {
     --font-display: "Playfair Display", Georgia, serif;
-    --font-sans: "Inter", system-ui, sans-serif;
       --font-stat: "EB Garamond", Georgia, serif;
 
     --color-alpha:#ff6b00;
@@ -20,7 +19,6 @@
   transform: translateY(-3px) scale(1.01);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
-
 .underline-hover {
   position: relative;
 }
@@ -56,4 +54,59 @@
 
 
 /* -------------------------------------------------- */
+
+
+footer{
+  padding: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111111 ;
+}
+
+.text{
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+footer a{
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px white;
+}
+
+footer > :nth-child(2) {
+    font-size: 3rem;
+}
+
+
+footer > :nth-child(2) > span{
+  font-size: 1.5rem;
+}
+
+footer > a p{
+  font-size: 0.8rem;
+}
+
+
+
+@media (max-width:767px) {
+  footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+  }
+
+
+  footer > :nth-child(2) {
+    font-size: 1.5rem;
+}
+
+
+footer > :nth-child(2) > span{
+  font-size: 0.8rem;
+}
+
+}
 
