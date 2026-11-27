@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/input.css">
     <title>Aprés</title>
 </head>
 <body>
@@ -31,9 +32,9 @@
 
     </header>
 
-    <main class="bg-bg px-[4rem] max-md:px-[1rem]">
+    <main class="bg-bg px-[4rem] py-[2rem] max-md:px-[1rem]">
         <!-- hero section -->
-        <section class=" pt-[8rem] max-md:pt-[10rem] pb-[6rem]   border-b border-gray-600  flex flex-col  gap-[2rem]">
+        <section class=" pt-[6rem] max-md:pt-[10rem] pb-[6rem]   border-b border-gray-600  flex flex-col  gap-[2rem]">
             <div class="flex flex-col gap-[2rem] max-md:gap-[1rem]">
                  <p class="uppercase text-white text-[0.8rem] font-semibold"><span class="text-alpha">02</span> aprés</p>
                 <p class="uppercase text-alpha text-[0.8rem]">et aprés ?</p>
@@ -139,7 +140,7 @@
         <!-- second section -->
         <section>
 
-
+            
             <div class="font-stat flex gap-[4rem] items-center max-md:items-start max-md:gap-[1rem] py-[2rem] border-b border-gray-600 max-md:flex-col">
                 <span class="text-[4rem] max-md:text-[2.5rem] text-white">Anonyme</span>
                 <span class="text-[4rem] max-md:text-[2.5rem] text-white">Gratuit.</span>
@@ -151,7 +152,117 @@
                 <p class="text-[0.6rem] text-alpha uppercase font-semibold">au maroc en 2024</p>
                 <p class="text-[2rem] max-md:text-[1.7rem] font-stat text-gray-600 max-md:w-full w-[60%]">IO 691 mariages de mineures autorises par des juges. <span class="text-white ">Signaler, c'est empêcher le prochain.</span></p>
             </div>
+
+
+
+            <!-- Details -->
+             <div class="flex max-md:flex-col max-md:gap-[1rem] lg:border-b lg:border-gray-600 ">
+
+                
+                <div class="w-[70%] max-md:w-full lg:border-r max-md:border border-gray-600 flex flex-col gap-[1rem] p-[2rem]">
+                <div class="border-b border-gray-600 pb-[1rem]">
+                    <p class="text-alpha uppercase text-[0.6rem] tracking-[0.1rem]">question que les filles se posent</p>
+                    <p class="text-[3rem] text-white font-stat">Tu peux demander.</p>
+                </div>
+                <details class="group border-b border-gray-600 flex flex-col gap-[0.5rem] pb-[1rem] ">
+                    <summary class="flex  justify-between items-center cursor-pointer list-none">
+                        <p class="text-white font-stat text-[1.2rem] ">Est-ce que mes parents vont savoir ?</p>
+                        <span>
+                        <span class="text-alpha group-open:hidden text-[1.2rem]">+</span>
+                        <span class="hidden text-alpha group-open:inline">−</span>
+                        </span>
+                    </summary>
+                        <p class="text-gray-400 text-[0.8rem]">Non, ton signalement est anonyme.</p>
+                </details>
+                <details class="group border-b border-gray-600 flex flex-col gap-[0.5rem] pb-[1rem] ">
+                    <summary class="flex  justify-between items-center cursor-pointer list-none">
+                        <p class="text-white font-stat text-[1.2rem] ">Est-ce que je dois porter plainte ?</p>
+                        <span>
+                        <span class="text-alpha group-open:hidden text-[1.2rem]">+</span>
+                        <span class="hidden text-alpha group-open:inline">−</span>
+                        </span>
+                    </summary>
+                        <p class="text-gray-400 text-[0.8rem]">Non. Signaler # porter plainte. Tu choisis.</p>
+                </details>
+                <details class="group border-b border-gray-600 flex flex-col gap-[0.5rem] pb-[1rem] ">
+                    <summary class="flex  justify-between items-center cursor-pointer list-none">
+                        <p class="text-white font-stat text-[1.2rem] ">C'est gratuit ?</p>
+                        <span>
+                        <span class="text-alpha group-open:hidden text-[1.2rem]">+</span>
+                        <span class="hidden text-alpha group-open:inline">−</span>
+                        </span>
+                    </summary>
+                        <p class="text-gray-400 text-[0.8rem]">Oui, toujours gratuit.</p>
+                </details>
+
+                </div>
+
+
+
+                <div class="w-[30%] max-md:w-full p-[2rem] max-md:border border-gray-600 flex flex-col gap-[0.5rem]">
+                    <p class="text-alpha text-[0.7rem] tracking-[0.1rem] font-semibold">PRÉPARE TON SIGNALEMENT</p>
+                    <p class="text-[3rem] font-stat text-white ">Quelques repères.</p>
+                    <p class="text-gray-400 text-[0.8rem]">Tu n'as pas besoin de tout savoir. Coche ce que tu veux preparer.</p>
+
+                    <div class="flex flex-col gap-[1rem]">
+                        <div class="flex gap-[1rem] border border-gray-600 w-full py-[0.5rem] px-[1rem]">
+                            <input id="ton-nom" type="checkbox" class="accent-alpha">
+                            <label for="ton-nom" class="text-[0.8rem] text-gray-300">Ton nom - ou pas</label>
+                        </div>
+                        <div class="flex gap-[1rem] border border-gray-600 w-full py-[0.5rem] px-[1rem]">
+                            <input id="ton-nom" type="checkbox" class="accent-alpha">
+                            <label for="ton-nom" class="text-[0.8rem] text-gray-300">Ton nom - ou pas</label>
+                        </div>
+                        <div class="flex gap-[1rem] border border-gray-600 w-full py-[0.5rem] px-[1rem]">
+                            <input id="ton-nom" type="checkbox" class="accent-alpha">
+                            <label for="ton-nom" class="text-[0.8rem] text-gray-300">Ton nom - ou pas</label>
+                        </div>
+                        <div class="flex gap-[1rem] border border-gray-600 w-full py-[0.5rem] px-[1rem]">
+                            <input id="ton-nom" type="checkbox" class="accent-alpha">
+                            <label for="ton-nom" class="text-[0.8rem] text-gray-300">Ton nom - ou pas</label>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+             </div>
         </section>
+
+
+        <!-- section 3 -->
+         <section class="p-[2rem] max-md:gap-[2rem] max-md:flex-col  flex">
+
+            <!-- left -->
+            <div>
+                <p class="uppercase text-[0.6rem] text-alpha font-semibold">Elles ont signalé</p>
+                <p class="text-[3rem]  font-stat text-white ">Aprés le silence</p>
+            </div>
+
+
+            <!-- right -->
+            <div class="flex max-md:flex-col gap-[1rem] justify-end">
+               
+               <div class="bg-[#1a1917] flex flex-col gap-[2rem] max-md:w-full w-[40%] p-[1rem] border-t border-alpha">
+                    <p class="uppercase text-[0.5rem] w-fit text-gray-600">01 . Anonyme. 16 ans</p> 
+                    <div class="flex flex-col gap-[0.5rem]">
+                        <p class="text-[1.6rem]  text-white font-stat w-[90%]">« Une éducatrice m'a crue dès le premier appel. »</p>
+                        <p class=" text-[0.7rem]  text-gray-400 w-[90%]">Elle a été orientée vers une association locale. Une juriste lui a expliqué ses droits et le mariage n'a pas eu lieu.</p>
+                    </div> 
+               </div> 
+               <div class="bg-[#1a1917] flex flex-col gap-[2rem] max-md:w-full  w-[40%] p-[1rem] border-t border-alpha">
+                    <p class="uppercase text-[0.5rem] w-fit text-gray-600">02 . Anonyme. 17 ans</p> 
+                    <div class="flex flex-col gap-[0.5rem]">
+                        <p class="text-[1.6rem]  text-white font-stat w-[90%]">« Je pensais devoir tout affronter seule. »</p>
+                        <p class=" text-[0.7rem]  text-gray-400 w-[90%]">Elle a choisi une personne de confiance. Ensemble, elles ont préparé les démarches et trouvé un lieu sûr.</p>
+                    </div> 
+               </div> 
+
+
+            </div>
+         </section>
 
 
     </main>
